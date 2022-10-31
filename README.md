@@ -1,7 +1,8 @@
 SVG Icons
 
-SVG Icons CSS
+# SVG Icons CSS #
 SVG icons library in CSS background image
+
 To add icons on website, the easiest way is to use an icon font. Simple ref link in style and after html tag in the page.
 
 There are several well known icon fonts. Most well known is Font-Awesome, but you have others like Google Material icons.
@@ -13,13 +14,13 @@ to have more choices "in case of". Now more and more icons gives a ref file to l
 
 What about building library, with just icons needed. Those icons would have to be scalable as font, can have their color changed, and can be used in regular CSS class. In add library has to be easy to setup.
 
-Test it on CodePen
+[Test it on CodePen](https://codepen.io/sosuke/pen/Pjoqqp)
 
-alt text
+![alt text](https://github.com/pierfarrugia/svgiconsCSS/blob/main/svg_icons.webp)
 
-Read this on HTML page
+[Read this on HTML page](https://aonecommunication.ch/dev/creativeprog/blog.html#svgIconsCSS)
 
-See it in action full screen
+[See it in action full screen](https://aonecommunication.ch/dev/creativeprog/content/svg_icons_CSS.html)
 
 Let take the “menu” icon from Google Material font.
 
