@@ -15,7 +15,7 @@ What about building library, with just icons needed. Those icons would have to b
 
 ---
 
-<a href="https://codepen.io/pierfarrugia/pen/eYrENzZ"> Build your SVG icon libraries</a>
+<a href="https://codepen.io/pierfarrugia/pen/eYrENzZ" target="_blank">Test it on CodePen</a>
 
 [Test it on CodePen](https://codepen.io/sosuke/pen/Pjoqqp){:target="_blank"}
 
