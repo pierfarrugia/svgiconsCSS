@@ -15,17 +15,13 @@ What about building library, with just icons needed. Those icons would have to b
 
 ---
 
-<a href="https://www.markdownguide.org" target="_blank">Learn Markdown!</a>
-
 <a href="https://codepen.io/pierfarrugia/pen/eYrENzZ" target="_blank">Test it on CodePen</a>
-
-[Test it on CodePen](https://codepen.io/sosuke/pen/Pjoqqp){:target="_blank"}
 
 ![alt text](https://github.com/pierfarrugia/svgiconsCSS/blob/main/svg_icons.webp)
 
-[Read this on HTML page](https://aonecommunication.ch/dev/creativeprog/blog.html#svgIconsCSS)
+<a href="https://aonecommunication.ch/dev/creativeprog/blog.html#svgIconsCSS" target="_blank">Read this on HTML page</a>
 
-[See it in action full screen](https://aonecommunication.ch/dev/creativeprog/content/svg_icons_CSS.html)
+<a href="https://aonecommunication.ch/dev/creativeprog/content/svg_icons_CSS.html" target="_blank">See it in action full screen</a>
 
 
 ---
