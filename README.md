@@ -37,15 +37,14 @@ Note: if you use 10 icons, total weight will be 2kB, lot less than 250kB!
 ## The icon
 Type “material icons” in your browser to search Google Material icon, or click here:
 
-https://fonts.google.com/icons?selected=Material+Icons
-
-### google icon
+<a href="https://fonts.google.com/icons?selected=Material+Icons" target="_blank">google icon</a>
 
 When in Material Icon page, type “menu” in the search, select it, a panel arrive on right. On bottom of the panel, you have 2 buttons: SVG and PNG. Click on SVG, the SVG is downloaded in your computer.
 
 Open the SVG file in your text editor:
-
+```
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+```
 
 ### cleaning the svg
 
@@ -55,8 +54,10 @@ The path just before “” has no use, delete it.
 
 In the first part we have height, width and fill. Remove those to obtain the following:
 
+```
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg> 
 We didn’t change viewbox. First 2 values are the origin x and y. 2 last are viewbox size. For us those 2 last values will give the ratio.
+```
 
 We have deleted height, width, and fill to be able to modify those values in the CSS and not to be polluted by inline value.
 
@@ -104,7 +105,7 @@ We are putting the SVG in background-image, to do that we need the SVG with a da
 
 Copy your SVG and go here
 
-https://www.svgbackgrounds.com/tools/svg-to-css/
+<a href="https://www.svgbackgrounds.com/tools/svg-to-css/" target="_blank">svg to css</a>
 
 ![alt text](https://github.com/pierfarrugia/svgiconsCSS/blob/main/data_uri.webp)
 
@@ -135,7 +136,7 @@ Let's take white: #FFFFFF
 
 Go here:
 
-https://codepen.io/sosuke/pen/Pjoqqp
+<a href="https://codepen.io/sosuke/pen/Pjoqqp" target="_blank">color filter</a>
 
 ![alt text](https://github.com/pierfarrugia/svgiconsCSS/blob/main/filter_color.webp)
 
