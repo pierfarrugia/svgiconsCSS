@@ -45,7 +45,8 @@ Open the SVG file in your text editor:
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-  <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+  <path d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
 </svg> 
 ```
 
@@ -58,9 +59,13 @@ The path just before “” has no use, delete it.
 In the first part we have height, width and fill. Remove those to obtain the following:
 
 ```
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg> 
-We didn’t change viewbox. First 2 values are the origin x and y. 2 last are viewbox size. For us those 2 last values will give the ratio.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
 ```
+
+We didn’t change viewbox. First 2 values are the origin x and y. 2 last are viewbox size. For us those 2 last values will give the ratio.
+
 
 We have deleted height, width, and fill to be able to modify those values in the CSS and not to be polluted by inline value.
 
@@ -101,7 +106,9 @@ Now let define the ico-menu class.
 Remember our SVG menu was:
 
 ```
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
 ```
 
 We are putting the SVG in background-image, to do that we need the SVG with a dataURI conversion.
@@ -121,7 +128,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
 }
 ```
+
 If you want to define another icon, like the close icon, do same to obtain:
+
 ```
 .ico-close{
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19
@@ -157,7 +166,9 @@ You can use it as span or div (“ico” is inline-block).
 For 1 icon you add 3 classes: the generic ico, the shape like ico-menu, and the color like ico-white.
 ```
 <span class="ico ico-menu ico-white" style="font-size: 4em"></span>
+
 <div class="ico ico-close ico-primary-color" style="font-size: 150%"></div>
+
 ```
 
 For the size, you can define it in the element or leave the normal DOM hierarchy working like for a font.
