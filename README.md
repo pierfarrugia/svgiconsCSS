@@ -185,4 +185,4 @@ In the demo, you have 5 icons and 4 colors as a base for your own library
 
 Thanks for reading
 
-* (tested on Chrome, Firefox, Edge, Safari) *
+*(tested on Chrome, Firefox, Edge, Safari)*
