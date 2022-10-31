@@ -7,9 +7,7 @@ To add icons on website, the easiest way is to use an icon font. Simple ref link
 
 There are several well known icon fonts. Most well known is Font-Awesome, but you have others like Google Material icons.
 
-First time searching for a font icon, we are looking for the font with the biggest number of icons (2000, 3000,... more than
-
-to have more choices "in case of". Now more and more icons gives a ref file to load bigger and bigger! Could be from 128kB to 256kB or even more (384... >750!). That means, even if downloading from a CDN, time will be at best 250ms (fiber connection) but often 750ms or more than 1 second. And that's just for the icons of the website!
+First time searching for a font icon, we are looking for the font with the biggest number of icons (2000, 3000,... more than to have more choices "in case of". Now more and more icons gives a ref file to load bigger and bigger! Could be from 128kB to 256kB or even more (384... >750!). That means, even if downloading from a CDN, time will be at best 250ms (fiber connection) but often 750ms or more than 1 second. And that's just for the icons of the website!
 5000 icons are loaded. But the website is using 8 or 10, certainly less than 20 on 5000, not really efficient.
 
 What about building library, with just icons needed. Those icons would have to be scalable as font, can have their color changed, and can be used in regular CSS class. In add library has to be easy to setup.
