@@ -17,7 +17,7 @@ What about building library, with just icons needed. Those icons would have to b
 
 <a href="https://codepen.io/pierfarrugia/pen/eYrENzZ" target="_blank">Test it on CodePen</a>
 
-![alt text](https://github.com/pierfarrugia/svgiconsCSS/blob/main/svg_icons.webp)
+![alt text](https://aonecommunication.ch/content/img/portfolio/svg_icons.webp)
 
 <a href="https://aonecommunication.ch/dev/creativeprog/blog.html#svgIconsCSS" target="_blank">Read this on HTML page</a>
 
@@ -117,7 +117,7 @@ Copy your SVG and go here
 
 <a href="https://www.svgbackgrounds.com/tools/svg-to-css/" target="_blank">svg to css</a>
 
-![alt text](https://github.com/pierfarrugia/svgiconsCSS/blob/main/data_uri.webp)
+![alt text](https://aonecommunication.ch/content/img/portfolio/data_uri.webp)
 
 
 Convert your SVG to dataURI copy result and paste the dataURI to your CSS:
@@ -150,7 +150,7 @@ Go here:
 
 <a href="https://codepen.io/sosuke/pen/Pjoqqp" target="_blank">color filter</a>
 
-![alt text](https://github.com/pierfarrugia/svgiconsCSS/blob/main/filter_color.webp)
+![alt text](https://aonecommunication.ch/content/img/portfolio/filter_color.webp)
 
 Put your #FFFFFF in the target color field, click the button "Compute filters", and you have your filter to make the class:
 ```
