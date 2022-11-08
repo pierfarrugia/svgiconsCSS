@@ -9,17 +9,11 @@ To add icons on website, the easiest way is to use an icon font. Simple ref link
 
 There are several well known icon fonts. Most well known is Font-Awesome, but you have others like Google Material icons.
 
-First time searching for a font icon, we are looking for the font with the biggest number of icons (2000, 3000,... more than
-
-5000) to have more choices "in case of". Now more and more icons gives a ref file to load bigger and bigger! Could be from 128kB
-      to 256kB or even more (384... >750!). That means, even if downloading from a CDN, time will be at best 250ms (fiber
-      connection)
-      but often 750ms or more than 1 second. And that's just for the icons of the website!
+First time searching for a font icon, we are looking for the font with the biggest number of icons (2000, 3000,... more than 5000) to have more choices "in case of". Now more and more icons gives a ref file to load bigger and bigger! Could be from 128kB to 256kB or even more (384... >750!). That means, even if downloading from a CDN, time will be at best 250ms (fiber connection) but often 750ms or more than 1 second. And that's just for the icons of the website!
 
 5000 icons are loaded. But the website is using 8 or 10, certainly less than 20 on 5000, not really efficient.
 
-**What about building library, with just icons needed. Those icons would have to be scalable as font, can have their color
-changed, and can be used in regular CSS class. In add library has to be easy to setup.**
+**What about building library, with just icons needed. Those icons would have to be scalable as font, can have their color changed, and can be used in regular CSS class. In add library has to be easy to setup.**
 
 ---
 [Test it on CodePen](https://codepen.io/pierfarrugia/pen/eYrENzZ)
@@ -30,17 +24,12 @@ changed, and can be used in regular CSS class. In add library has to be easy to 
 
 [See it in action full screen](https://aonecommunication.ch/content/svg_icons_CSS.html)
 
-
-
-
-
 ---
 
 
 Let take the “menu” icon from Google Material font.
 
-In PNG weight is 100B for 1 icon in 1 color. PNG is bitmap, you will have to take at least 3 or 4 sizes for 1 icon (600 to 800B)
-and it’s not a font, meaning you can’t change color by CSS.
+In PNG weight is 100B for 1 icon in 1 color. PNG is bitmap, you will have to take at least 3 or 4 sizes for 1 icon (600 to 800B) and it’s not a font, meaning you can’t change color by CSS.
 
 In SVG, weight is 202B and we will decrease its size.
 
@@ -54,8 +43,7 @@ Type “material icons” in your browser to search Google Material icon, or cli
 
 ![google icon](https://aonecommunication.ch/content/img/portfolio/materialIcon.webp)
 
-When in Material Icon page, type “menu” in the search, select it, a panel arrive on right. On bottom of the panel, you have 2
-buttons: SVG and PNG. Click on SVG, the SVG is downloaded in your computer.
+When in Material Icon page, type “menu” in the search, select it, a panel arrive on right. On bottom of the panel, you have 2 buttons: SVG and PNG. Click on SVG, the SVG is downloaded in your computer.
 
 Open the SVG file in your text editor:
 
@@ -75,8 +63,7 @@ In the first part we have height, width and fill. Remove those to obtain the fol
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg> 
 ```
 
-We didn’t change viewbox. First 2 values are the origin x and y. 2 last are viewbox size. For us those 2 last values will give
-the ratio.
+We didn’t change viewbox. First 2 values are the origin x and y. 2 last are viewbox size. For us those 2 last values will give the ratio.
 
 We have deleted height, width, and fill to be able to modify those values in the CSS and not to be polluted by inline value.
 
@@ -111,9 +98,7 @@ All sizes are 1em, and very important the line-height (needed for later vertical
 
 Display is inline-block. Whatever HTML tag you'll be going to use, div, span, it'll be inline-block to have the size defined.
 
-When we’ll put the class ico in any HTML element it’ll take the size defined for this element. For example if it’s a H4 of 2em,
-ico will be 2x1 = 2 em… Same if you are putting font-size to 36px, it'll be 36px x 1em = 36px. Because em is proportional and we
-put 1em everywhere, it’ll scaled regarding the element it’s in: exactly what needed.
+When we’ll put the class ico in any HTML element it’ll take the size defined for this element. For example if it’s a H4 of 2em, ico will be 2x1 = 2 em… Same if you are putting font-size to 36px, it'll be 36px x 1em = 36px. Because em is proportional and we put 1em everywhere, it’ll scaled regarding the element it’s in: exactly what needed.
 
 Now let define the ico-menu class.
 
@@ -135,8 +120,7 @@ Convert your SVG to dataURI copy result and paste the dataURI to your CSS:
 
 ```
 .ico-menu{
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3
-18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
 }
 ```
 
@@ -144,18 +128,15 @@ If you want to define another icon, like the close icon, do same to obtain:
 
 ```
 .ico-close{
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19
-6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z'/%3E%3C/svg%3E");
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z'/%3E%3C/svg%3E");
 }
 ```
 
 #### Color
 
-For color we'll need to use the filter trick. SVG "fill" could be used (if not already in the SVG) with inline SVG, but here we
-have the SVG in background.
+For color we'll need to use the filter trick. SVG "fill" could be used (if not already in the SVG) with inline SVG, but here we have the SVG in background.
 
-So we'll need to define class for each icon color. I know some can consider that boring but let think about it: how many colors
-are you using for your icons? 2, 3, 4... ???
+So we'll need to define class for each icon color. I know some can consider that boring but let think about it: how many colors are you using for your icons? 2, 3, 4... ???
 
 Let's take white: #FFFFFF
 
@@ -195,11 +176,9 @@ The very good thing here is you can align this element with text, image (..) ver
 Conclusion
 ----------
 
-The first time you’ll have to make 10 or 15 icons, it could seem annoying but it’s really fast to do. You can add new icon to
-your library when you need.
+The first time you’ll have to make 10 or 15 icons, it could seem annoying but it’s really fast to do. You can add new icon to your library when you need.
 
-After you'll have a CSS file with all your ico shape and ico colors. You can copy/paste those needed in your project. Your 10
-needed icons would weight 1.2kB!
+After you'll have a CSS file with all your ico shape and ico colors. You can copy/paste those needed in your project. Your 10 needed icons would weight 1.2kB!
 
 _In the demo, you have 5 icons and 4 colors as a base for your own library_
 
