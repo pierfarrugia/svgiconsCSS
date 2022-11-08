@@ -20,7 +20,7 @@ First time searching for a font icon, we are looking for the font with the bigge
 
 ![alt text](https://aonecommunication.ch/content/img/portfolio/svg_icons.webp)
 
-[Read this on HTML page](https://aonecommunication.ch/dev/creativeprog/blog.html#svgIconsCSS)
+[Read this on HTML page](https://aonecommunication.ch/dev/creativeprog/blog.html#svgicons_css)
 
 [See it in action full screen](https://aonecommunication.ch/content/svg_icons_CSS.html)
 
